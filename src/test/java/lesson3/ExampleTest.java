@@ -30,7 +30,7 @@ public class ExampleTest extends AbstractTest {
                 .then()
                 .statusCode(200)
                 .statusLine(containsString("OK"))
-                .time(lessThan(3000L))
+                .time(lessThan(5000L))
                 .contentType(ContentType.JSON)
                 .header("Connection", "keep-alive")
         ;
